@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f9fc">
+  <meta name="description" content="A birthday scrapbook made with love for Ann.">
+  <title>Happy Birthday, Ann · A scrapbook of love</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="scrapbook-data.js" defer></script>
+  <script src="scrapbook.js" defer></script>
+</head>
+<body class="scrapbook-page">
+  <div class="paper-grain" aria-hidden="true"></div>
+  <header class="scrapbook-header">
+    <a class="wordmark" href="./" aria-label="Back to the birthday surprise page"><span class="wordmark-heart">♡</span> a little love for Ann</a>
+    <span class="scrapbook-label">A keepsake made with love <span aria-hidden="true">✦</span></span>
+  </header>
+  <main>
+    <section class="scrapbook-cover" id="top">
+      <span class="cover-star star-a" aria-hidden="true">✦</span><span class="cover-star star-b" aria-hidden="true">✧</span><span class="cover-star star-c" aria-hidden="true">✦</span>
+      <p class="eyebrow">A little book of us</p>
+      <h1>Happy Birthday,<br><em>Ann</em> <span class="blue-heart">♥</span></h1>
+      <p class="cover-subtitle">A collection of memories, laughter, love, and heartfelt messages from the people who treasure you.</p>
+      <a class="button button-light" href="#memories">Open your scrapbook <span aria-hidden="true">↓</span></a>
+      <div class="cover-bottom-note">made of little moments <span aria-hidden="true">♡</span></div>
+    </section>
+
+    <section class="scrapbook-intro section-wrap" id="memories">
+      <div><p class="eyebrow">Every page holds a piece of us</p><h2>For all the ways<br>you make life <em>brighter.</em></h2></div>
+      <div class="intro-side"><p>These are the stories, snapshots, and words your people wanted you to keep close. Take your time turning through them—each one was chosen just for you.</p><div class="memory-count"><strong id="memory-count">0</strong><span>little pieces of love</span></div></div>
+    </section>
+
+    <section class="memory-section section-wrap" aria-label="Birthday memories">
+      <div class="memory-toolbar"><p class="handwritten">A few pages from the heart</p><button class="button button-outline" id="random-memory" type="button">Surprise me <span aria-hidden="true">✧</span></button></div>
+      <div class="memory-grid" id="memory-grid" aria-live="polite"></div>
+      <div class="empty-scrapbook" id="empty-scrapbook"><span class="empty-icon" aria-hidden="true">♡</span><h3>Your memories will live here</h3><p>This scrapbook is ready for its first pages. Add approved notes, photos, and contributor names in <code>scrapbook-data.js</code> when you’re ready to reveal it.</p></div>
+    </section>
+
+    <section class="contributors section-wrap" id="contributors">
+      <div class="contributors-card"><span class="contributor-flower" aria-hidden="true">✿</span><p class="eyebrow">A note from your people</p><h2>All the love, <em>in one place.</em></h2><p class="contributor-intro">The people who made these pages possible:</p><ul class="contributor-list" id="contributor-list"></ul><p class="no-contributors" id="no-contributors">Your favorite people will be listed here.</p></div>
+    </section>
+
+    <section class="final-note section-wrap"><div class="final-note-inner"><span class="final-heart" aria-hidden="true">♡</span><p>Every photo, every voice, and every memory in these pages is a reminder of how loved you are. No matter where life takes us, these moments will always stay with us. Happy Birthday, Ann. <span class="blue-heart">♥</span></p><span class="handwritten final-signoff">with all our love</span></div></section>
+  </main>
+  <footer class="site-footer"><a href="#top">Back to the beginning ↑</a><span>Made with love, for Ann <span class="blue-heart">♥</span></span></footer>
+
+  <div id="youtube-music-panel" hidden style="position:fixed;right:24px;bottom:76px;z-index:8;width:220px;padding:10px;background:#fff;border:1px solid #d5e0e9;box-shadow:0 12px 32px rgba(35,62,88,.18);">
+    <div id="youtube-player" aria-label="Birthday scrapbook music video"></div>
+    <a href="https://youtu.be/F7A3bPg1lJ4?si=U5_rlSdB1zl4P1yQ" target="_blank" rel="noopener noreferrer" style="display:block;padding:7px 2px 0;color:#597895;font:11px 'DM Sans',Arial,sans-serif;text-align:center;">Open song on YouTube ↗</a>
+  </div>
+  <button class="music-toggle" id="music-toggle" type="button" aria-pressed="false" aria-label="Turn background music on"><span aria-hidden="true">♫</span><span id="music-label">Music off</span></button>
+</body>
+</html>
